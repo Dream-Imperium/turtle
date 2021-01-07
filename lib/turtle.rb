@@ -135,7 +135,7 @@ module Turtle
             " #{e[:tags].join(' ')}".cyan
       end.tap do |list|
         out " ..." if @db.list.length > entities.length && !entities.length.zero?
-        out "  there are no turtle in the water".green if list.size.zero?
+        out "  there are no turtles out here :(".green if list.size.zero?
       end
 
       out
